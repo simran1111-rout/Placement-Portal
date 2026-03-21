@@ -63,7 +63,7 @@ def create_categories():
 
 def create_questions(categories):
     questions_data = {
-        'Quantitative Aptitude': [
+        'Quantitative Aptitude':[
             
             # --- Numbers, LCM & HCF ---
             {'question_text': 'What is the sum of the first 50 natural numbers?', 'option_a': '1225', 'option_b': '1275', 'option_c': '1325', 'option_d': '1375', 'correct_answer': 'B', 'explanation': 'n(n+1)/2 = 50*51/2 = 1275.', 'difficulty': 'easy'},
@@ -219,10 +219,7 @@ def create_questions(categories):
             {'question_text': 'The sum of the digits of a two-digit number is 15 and the difference between the digits is 3. What is the two-digit number?', 'option_a': '69', 'option_b': '78', 'option_c': '96', 'option_d': 'Cannot be determined', 'correct_answer': 'D', 'explanation': 'x+y=15, x-y=3 => 2x=18 => x=9, y=6. The number could be 96 or 69. Cannot be definitively determined.', 'difficulty': 'medium'},
             {'question_text': 'Evaluate: log base 2 of 64.', 'option_a': '4', 'option_b': '5', 'option_c': '6', 'option_d': '7', 'correct_answer': 'C', 'explanation': '2^6 = 64. Therefore, log2(64) = 6.', 'difficulty': 'easy'},
             {'question_text': 'If 15 men working 9 hours a day can reap a field in 16 days, in how many days will 18 men reap the field, working 8 hours a day?', 'option_a': '14', 'option_b': '15', 'option_c': '16', 'option_d': '18', 'correct_answer': 'B', 'explanation': 'M1*D1*H1 = M2*D2*H2 => 15 * 16 * 9 = 18 * D2 * 8 => 2160 = 144 * D2 => D2 = 15.', 'difficulty': 'medium'},
-            {'question_text': 'A rectangular carpet has an area of 120 sq meters and a perimeter of 46 meters. The length of its diagonal is:', 'option_a': '15', 'option_b': '16', 'option_c': '17', 'option_d': '20', 'correct_answer': 'C', 'explanation': 'L*B=120, 2(L+B)=46 => L+B=23. Diagonal^2 = L^2 + B^2 = (L+B)^2 - 2LB = 529 - 240 = 289. Diagonal = 17.', 'difficulty': 'hard'}
-        
-
-
+            {'question_text': 'A rectangular carpet has an area of 120 sq meters and a perimeter of 46 meters. The length of its diagonal is:', 'option_a': '15', 'option_b': '16', 'option_c': '17', 'option_d': '20', 'correct_answer': 'C', 'explanation': 'L*B=120, 2(L+B)=46 => L+B=23. Diagonal^2 = L^2 + B^2 = (L+B)^2 - 2LB = 529 - 240 = 289. Diagonal = 17.', 'difficulty': 'hard'},
             {'question_text': 'If a number increases by 20% then decreases by 20%, what is the net change?', 'option_a': '0%', 'option_b': '4% decrease', 'option_c': '4% increase', 'option_d': '2% decrease', 'correct_answer': 'B', 'explanation': '100 -> 120 -> 96. Net change = -4%.', 'difficulty': 'easy'},
             {'question_text': 'A train 200m long runs at 72 km/h. Time to cross a pole?', 'option_a': '8s', 'option_b': '10s', 'option_c': '12s', 'option_d': '15s', 'correct_answer': 'B', 'explanation': '72 km/h = 20 m/s. Time = 200/20 = 10s.', 'difficulty': 'easy'},
             {'question_text': 'Sum of first 50 natural numbers?', 'option_a': '1225', 'option_b': '1275', 'option_c': '1325', 'option_d': '1375', 'correct_answer': 'B', 'explanation': 'n(n+1)/2 = 50*51/2 = 1275.', 'difficulty': 'easy'},
@@ -239,6 +236,7 @@ def create_questions(categories):
             {'question_text': 'Find the compound interest on $1000 at 10% for 2 years.', 'option_a': '$200', 'option_b': '$210', 'option_c': '$220', 'option_d': '$230', 'correct_answer': 'B', 'explanation': 'Amount = 1000 * (1.1)^2 = 1210. CI = 1210 - 1000 = 210.', 'difficulty': 'medium'},
             {'question_text': 'A person crosses a 600m long street in 5 mins. What is his speed in km/hr?', 'option_a': '3.6', 'option_b': '7.2', 'option_c': '8.4', 'option_d': '10', 'correct_answer': 'B', 'explanation': 'Speed = 600/300 m/s = 2 m/s. In km/hr: 2 * (18/5) = 7.2.', 'difficulty': 'medium'}
         ],
+    
         'Logical Reasoning': [
           
             # --- Original 15 Questions ---
@@ -369,7 +367,7 @@ def create_questions(categories):
             {'question_text': 'Find the valid conclusion. Statement: The old order changeth yielding place to new. Conclusions: I. Change is the law of nature. II. Discard old ideas because they are old.', 'option_a': 'Only I follows', 'option_b': 'Only II follows', 'option_c': 'Both follow', 'option_d': 'Neither follows', 'correct_answer': 'A', 'explanation': 'The statement means change is inevitable. It does not mean old ideas are bad just because they are old.', 'difficulty': 'hard'},
             {'question_text': 'Count the number of triangles in a square crossed by two diagonals.', 'option_a': '4', 'option_b': '6', 'option_c': '8', 'option_d': '10', 'correct_answer': 'C', 'explanation': '4 small triangles + 4 large triangles formed by 2 small ones = 8.', 'difficulty': 'medium'},
             {'question_text': 'At a party, everyone shook hands with everybody else. There were 66 handshakes. How many people were at the party?', 'option_a': '11', 'option_b': '12', 'option_c': '13', 'option_d': '14', 'correct_answer': 'B', 'explanation': 'n(n-1)/2 = 66 => n(n-1) = 132. 12*11 = 132. So 12 people.', 'difficulty': 'hard'},
-            {'question_text': 'A monkey climbs 30 feet at the beginning of each hour and rests for a while when he slips back 20 feet before he again starts climbing in the beginning of the next hour. If he begins his ascent at 8.00 a.m., at what time will he first touch a flag at 120 feet from the ground?', 'option_a': '4 p.m.', 'option_b': '5 p.m.', 'option_c': '6 p.m.', 'option_d': 'None', 'correct_answer': 'C', 'explanation': 'Effective climb = 10 ft/hr. In 9 hours (up to 5pm) he climbs 90 ft. At 6pm he climbs 30 ft, reaching 120 ft exactly. 8am + 10 hours = 6pm.', 'difficulty': 'hard'}
+            {'question_text': 'A monkey climbs 30 feet at the beginning of each hour and rests for a while when he slips back 20 feet before he again starts climbing in the beginning of the next hour. If he begins his ascent at 8.00 a.m., at what time will he first touch a flag at 120 feet from the ground?', 'option_a': '4 p.m.', 'option_b': '5 p.m.', 'option_c': '6 p.m.', 'option_d': 'None', 'correct_answer': 'C', 'explanation': 'Effective climb = 10 ft/hr. In 9 hours (up to 5pm) he climbs 90 ft. At 6pm he climbs 30 ft, reaching 120 ft exactly. 8am + 10 hours = 6pm.', 'difficulty': 'hard'},
         
 
             {'question_text': 'If COMPUTER is coded as RFUVQNPC, how is MEDICINE coded?', 'option_a': 'MFEJDJOF', 'option_b': 'ENICIDME', 'option_c': 'FOJDJEFM', 'option_d': 'MEDICINF', 'correct_answer': 'C', 'explanation': 'Reversed and shifted by +1.', 'difficulty': 'hard'},
@@ -583,6 +581,8 @@ def create_questions(categories):
             {'question_text': '(Company Fit) Why do you have a gap in your resume?', 'option_a': 'I was lazy', 'option_b': 'Failed interviews', 'option_c': 'I took time to upskill, complete certifications, or handle matters responsibly', 'option_d': 'Lie about dates', 'correct_answer': 'C', 'explanation': 'Honesty paired with productive action is the best approach.', 'difficulty': 'easy'},
             {'question_text': '(Negotiation) What are your salary expectations?', 'option_a': 'I want at least 20 Lakhs', 'option_b': 'Whatever is fine', 'option_c': 'Based on market research, I expect between X and Y, but am open to discussing total compensation', 'option_d': 'Demand 30% more', 'correct_answer': 'C', 'explanation': 'Providing a well-researched range shows professionalism and flexibility.', 'difficulty': 'hard'}
         ]
+        
+    
     }
 
     total_questions = 0
